@@ -1,0 +1,18 @@
+{
+    "modname.create_auto_track": "Create: Automatisk rälsläggning",
+
+    "block.create_auto_track.builder_block": "Rälsläggare",
+
+    "tooltip.create_auto_track.1": "§7[Användning]",
+    "tooltip.create_auto_track.2": "Placera banvallsblock (t.ex. trä, jord eller sten) ovanpå maskinen.",
+    "tooltip.create_auto_track.3": "Placera tågräls ovanpå banvallsblocken.",
+    "tooltip.create_auto_track.4": "Ange sedan målkoordinaterna.",
+    "tooltip.create_auto_track.5": "Använd slutligen en stålplatta medan du smyger för att lägga rälsen.",
+    "tooltip.create_auto_track.6": "§7[Observera]",
+    "tooltip.create_auto_track.7": "Skift + högerklicka (tom hand) för att växla läggningsriktning.",
+    "tooltip.create_auto_track.8": "Tänk på koordinaterna: Avrunda uppåt för positiva värden, nedåt för negativa, annars fungerar inte rälsläggningen.",
+
+    "message.create_auto_track.roadbed": "Du måste placera ett banvallsblock ovanpå maskinen!",
+    "message.create_auto_track.track": "Du måste placera tågräls ovanpå banvallsblocket!",
+    "message.create_auto_track.wrong_way": "Inte en giltig rutt!"
+}

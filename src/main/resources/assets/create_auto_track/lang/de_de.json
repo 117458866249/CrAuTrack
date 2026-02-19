@@ -1,0 +1,18 @@
+{
+    "modname.create_auto_track": "Create: Automatischer Gleisbau",
+
+    "block.create_auto_track.builder_block": "Gleisverlegemaschine",
+
+    "tooltip.create_auto_track.1": "§7[Verwendung]",
+    "tooltip.create_auto_track.2": "Platziere Gleisbettblöcke (z.B. Holz, Erde oder Stein) auf der Maschine.",
+    "tooltip.create_auto_track.3": "Setze Schienen oben auf die Gleisbettblöcke.",
+    "tooltip.create_auto_track.4": "Lege dann die Zielposition fest.",
+    "tooltip.create_auto_track.5": "Verwende abschließend eine Stahlplatte im Schleichen-Modus, um das Gleis zu verlegen.",
+    "tooltip.create_auto_track.6": "§7[Hinweise]",
+    "tooltip.create_auto_track.7": "Umschalt + Rechtsklick (leere Hand) wechselt die Verlegerichtung.",
+    "tooltip.create_auto_track.8": "Achte bei den Koordinaten darauf: Bei positiven Werten aufrunden, bei negativen abrunden, sonst klappt's nicht mit dem Gleisbau.",
+
+    "message.create_auto_track.roadbed": "Du musst einen Gleisbettblock auf die Maschine setzen!",
+    "message.create_auto_track.track": "Du musst Schienen auf den Gleisbettblock setzen!",
+    "message.create_auto_track.wrong_way": "Keine gültige Streckenführung!"
+}

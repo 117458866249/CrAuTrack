@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "axis=x": { "model": "create_auto_track:block/builder_block_x" },
+        "axis=z": { "model": "create_auto_track:block/builder_block_z" }
+    }
+}
