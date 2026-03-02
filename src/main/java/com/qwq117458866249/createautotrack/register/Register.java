@@ -1,5 +1,9 @@
-package com.elevensef.createautotrack;
+package com.qwq117458866249.createautotrack.register;
 
+import com.qwq117458866249.createautotrack.objects.BuilderBlock;
+import com.qwq117458866249.createautotrack.objects.BuilderBlockItem;
+import com.qwq117458866249.createautotrack.CreateAutoTrack;
+import com.qwq117458866249.createautotrack.objects.PosSelector;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -28,6 +32,7 @@ public class Register {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateAutoTrack.MOD_ID);
 
     // Registers
+    // Block
     public static final RegistryObject<Block> BUILDER_BLOCK_B = BLOCKS.register("builder_block",
             () -> new BuilderBlock(BlockBehaviour.Properties.of()
                     .sound(SoundType.NETHER_BRICKS)
@@ -37,29 +42,27 @@ public class Register {
                     .noOcclusion()
                     ));
 
+    // Item
     public static final RegistryObject<Item> BUILDER_BLOCK = ITEMS.register("builder_block",
             () -> new BuilderBlockItem(BUILDER_BLOCK_B.get(), new Item.Properties()));
-    public static final RegistryObject<Item> DEBUG = ITEMS.register("debug",
-            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> POS_SELECTOR = ITEMS.register("pos_selector",
+            () -> new PosSelector(new Item.Properties()));
 
-    public static final RegistryObject<BlockEntityType<BuilderBE>> BUILDER_BLOCK_BE =
-            BLOCK_ENTITIES.register("builder_block",()->
-                    BlockEntityType.Builder.of(BuilderBE::new,
-                            BUILDER_BLOCK_B.get()).build(null));
-
+    // Tab
     public static final RegistryObject<CreativeModeTab> CR_AU_TR_TAB = CREATIVE_MODE_TABS.register("tab",
             ()-> CreativeModeTab.builder().icon(()->new ItemStack(BUILDER_BLOCK.get()))
                     .title(Component.translatable("modname.create_auto_track"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(BUILDER_BLOCK.get());
+                        pOutput.accept(POS_SELECTOR.get());
                     })
                     .build());
 
     // Event bus
-    public static void register(IEventBus eventBus){
-        BLOCKS.register(eventBus);
-        ITEMS.register(eventBus);
-        BLOCK_ENTITIES.register(eventBus);
-        CREATIVE_MODE_TABS.register(eventBus);
+    public static void register(IEventBus pEventBus){
+        BLOCKS.register(pEventBus);
+        ITEMS.register(pEventBus);
+        BLOCK_ENTITIES.register(pEventBus);
+        CREATIVE_MODE_TABS.register(pEventBus);
     }
 }

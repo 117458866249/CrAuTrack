@@ -2,17 +2,20 @@
     "modname.create_auto_track": "Create: Auto Track",
 
     "block.create_auto_track.builder_block": "Track Builder",
+    "item.create_auto_track.pos_selector": "Position Selector",
 
     "tooltip.create_auto_track.1": "§7[Usage]",
-    "tooltip.create_auto_track.2": "Place roadbed blocks (e.g., wood, dirt, or stone) on top of the machine.",
+    "tooltip.create_auto_track.2": "Place roadbed blocks on top of the machine (can be wood, dirt, terracotta, glass, wool, sandstone, glowstone, froglights, shroomlight, sea lanterns, or stone).",
     "tooltip.create_auto_track.3": "Place train tracks on top of the roadbed blocks.",
-    "tooltip.create_auto_track.4": "Then set the destination coordinates.",
-    "tooltip.create_auto_track.5": "Finally, use a sturdy plate while sneaking to lay the track.",
+    "tooltip.create_auto_track.4": "Then use the Position Selector to set the destination coordinates.",
+    "tooltip.create_auto_track.5": "Finally, sneak and right‑click on a block with the Position Selector to lay the track.",
     "tooltip.create_auto_track.6": "§7[Note]",
-    "tooltip.create_auto_track.7": "Shift + Right-click (empty hand) to switch the laying direction.",
-    "tooltip.create_auto_track.8": "When setting coordinates: round up for positive values, round down for negative values, otherwise track laying might fail!",
+    "tooltip.create_auto_track.7": "Shift + right‑click (empty hand) to switch the laying direction.",
+
+    "tooltip.create_auto_track.pos_selector": "Shift + right‑click on a block to record coordinates!",
 
     "message.create_auto_track.roadbed": "You need to place a roadbed block above the machine!",
-    "message.create_auto_track.track": "You need to place train tracks above the roadbed block!",
-    "message.create_auto_track.wrong_way": "Invalid route!"
+    "message.create_auto_track.track": "You need to place train tracks on top of the roadbed block!",
+    "message.create_auto_track.wrong_way": "Invalid route!",
+    "message.create_auto_track.selected": "Coordinates recorded!"
 }

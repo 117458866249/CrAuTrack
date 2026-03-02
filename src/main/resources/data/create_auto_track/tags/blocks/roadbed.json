@@ -3,6 +3,16 @@
         "#minecraft:dirt",
         "#minecraft:logs",
         "#minecraft:planks",
-        "#forge:stone"
+        "#forge:stone",
+        "#minecraft:terracotta",
+        "#forge:glass",
+        "minecraft:white_wool",
+        "#forge:sandstone",
+        "minecraft:glowstone",
+        "minecraft:sea_lantern",
+        "minecraft:ochre_froglight",
+        "minecraft:verdant_froglight",
+        "minecraft:pearlescent_froglight",
+        "minecraft:shroomlight"
     ]
 }

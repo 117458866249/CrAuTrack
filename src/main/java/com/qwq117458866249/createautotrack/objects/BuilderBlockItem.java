@@ -1,4 +1,4 @@
-package com.elevensef.createautotrack;
+package com.qwq117458866249.createautotrack.objects;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -33,8 +33,6 @@ public class BuilderBlockItem extends BlockItem {
                         .append(Component.translatable("tooltip.create_auto_track.6"))
                         .append("\n")
                         .append(Component.translatable("tooltip.create_auto_track.7"))
-                        .append("\n")
-                        .append(Component.translatable("tooltip.create_auto_track.8"))
                         .withStyle(ChatFormatting.DARK_GRAY));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
