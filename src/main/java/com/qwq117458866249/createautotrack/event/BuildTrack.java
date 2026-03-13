@@ -10,6 +10,7 @@ import com.simibubi.create.content.trains.track.TrackBlock;
 import com.simibubi.create.content.trains.track.TrackBlockEntity;
 import com.simibubi.create.content.trains.track.TrackShape;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.TagParser;
 import net.minecraft.network.chat.Component;
@@ -138,11 +139,7 @@ public class BuildTrack extends Block {
                         setValue(TrackBlock.SHAPE, TrackShape.ZO).setValue(TrackBlock.HAS_BE,true),3);
 
                 String trackMaterial = ((TrackBlock)level.getBlockState(new BlockPos(way[7][0],pos.getY()+1,way[7][1])).getBlock()).getMaterial().resourceName();
-                if (Objects.equals(trackMaterial, "andesite")){
-                    trackMaterial = "\"create:andesite\"";
-                } else {
-                    trackMaterial = "\"railways:" + trackMaterial + "\"";
-                }
+                trackMaterial = "\""+ Util.getNameSpace(String.valueOf(BuiltInRegistries.BLOCK.getKey(level.getBlockState(new BlockPos(way[7][0],pos.getY()+1,way[7][1])).getBlock()))) + ":" + trackMaterial + "\"";
 
                 String trackNbt = getTrackNbt(way,trackMaterial)[0];
                 String finishNbt = getTrackNbt(way,trackMaterial)[1];

@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shaped",
     "key": {
         "A": {
-            "item": "#forge:rods/wooden"
+            "tag": "forge:rods/wooden"
         },
         "B": {
             "item": "minecraft:flint"

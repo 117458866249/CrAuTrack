@@ -225,4 +225,16 @@ public class Util {
             return new CompoundTag();
         }
     }
+
+    public static String getNameSpace(String pFullID){
+        StringBuilder output = new StringBuilder();
+
+        for (int i = 0;i<pFullID.length();i++){
+            if (pFullID.indexOf(i) != ':'){
+                output.append(pFullID.indexOf(i));
+            } else break;
+        }
+
+        return output.toString();
+    }
 }
